@@ -19,8 +19,7 @@ app.use(favicon(path.join(__dirname, 'public','images','favicon.ico')));
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+
 app.use(logger('dev'));
 app.use(methodOverride());
 app.use(express.json());    
